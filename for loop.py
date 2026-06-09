@@ -185,11 +185,37 @@ Level 6 → NumPy/Pandas operations
 
 # Find the highest sales value.
 
-sales = [1200, 3400, 2200, 5600, 1800]
+# sales = [1200, 3400, 2200, 5600, 1800]
 
-highest_value = sales[0]
+# highest_value = sales[0]
 
-for i in sales:
-     if i > highest_value:
-      highest_value = i
-print(highest_value)
+# for i in sales:
+#      if i > highest_value:
+#       highest_value = i
+# print(highest_value)
+
+"---------------------------------------------"
+
+data = [5, None, 15, None, None, 25, 30]
+
+# Find:
+
+# Count of missing values
+# Count of valid values
+# Percentage of missing data
+
+mis_count = 0
+values = 0
+
+
+for i in data:
+        values += 1
+        if i is None:
+         mis_count += 1
+      
+
+print(f"total null values = {mis_count} \nTotal values = {values}")
+
+missing_percentage =  (mis_count/values)*100
+
+print(missing_percentage)
