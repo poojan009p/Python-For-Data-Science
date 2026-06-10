@@ -24,3 +24,12 @@ def greet(name = "Poojan"):
 def add(a, b):
     return a + b
 
+
+# Difference between print() and return
+
+def test():
+    print(10)
+
+result = test()  #10
+
+print(result)   #none
